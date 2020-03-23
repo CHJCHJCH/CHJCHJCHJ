@@ -4,11 +4,9 @@
     "DistilBertForQuestionAnswering"
   ],
   "attention_dropout": 0.1,
-  "bos_token_id": 0,
   "dim": 768,
   "do_sample": false,
   "dropout": 0.1,
-  "eos_token_ids": 0,
   "finetuning_task": null,
   "hidden_dim": 3072,
   "id2label": {
