@@ -5,6 +5,26 @@ datasets:
 metrics:
 - squad
 license: apache-2.0
+model-index:
+- name: distilbert-base-cased-distilled-squad
+  results:
+  - task:
+      type: question-answering
+      name: Question Answering
+    dataset:
+      name: squad
+      type: squad
+      config: plain_text
+      split: validation
+    metrics:
+    - name: Exact Match
+      type: exact_match
+      value: 79.5998
+      verified: true
+    - name: F1
+      type: f1
+      value: 86.9965
+      verified: true
 ---
 
 # DistilBERT base cased distilled SQuAD
