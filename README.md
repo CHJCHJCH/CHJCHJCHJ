@@ -25,6 +25,23 @@ model-index:
       type: f1
       value: 86.9965
       verified: true
+  - task:
+      type: question-answering
+      name: Question Answering
+    dataset:
+      name: squad_v2
+      type: squad_v2
+      config: squad_v2
+      split: validation
+    metrics:
+    - name: Exact Match
+      type: exact_match
+      value: 39.781
+      verified: true
+    - name: F1
+      type: f1
+      value: 43.6086
+      verified: true
 ---
 
 # DistilBERT base cased distilled SQuAD
