@@ -1,0 +1,6067 @@
+
+L
+	input_ids2Indices of input sequence tokens in the vocabulary*	
+€ €
+w
+attention_maskXMask to avoid performing attention on padding token indices (1 = not masked, 0 = masked)*	
+€ €R>
+start_scores!Span-start scores (after softmax)*	
+€ €R:
+
+end_scoresSpan-end scores (after softmax)*	
+€ €¢É
+:distilbert-base-cased-distilled-squad (question-answering)¢3
+#com.github.apple.coremltools.sourcetorch==2.0.1¢+
+$com.github.apple.coremltools.version7.0¢F
+co.huggingface.exporters.name%distilbert-base-cased-distilled-squad¢3
+co.huggingface.exporters.taskquestion-answering¢G
+%co.huggingface.exporters.architectureDistilBertForQuestionAnswering¢-
+"co.huggingface.exporters.frameworkpytorch¢-
+"co.huggingface.exporters.precisionfloat32²¡öüô
+mainòô
+ 
+	input_ids
+
+
+€
+%
+attention_mask
+
+
+€CoreML5œô
+CoreML5ôstart_scores
+end_scoresâ
+constK
+2model_distilbert_embeddings_word_embeddings_weight
+
+Äâ
+€*H
+name@
+8
+6"4
+2model_distilbert_embeddings_word_embeddings_weight*B
+val;
+
+Äâ
+€*"
+@model_path/weights/weight.bin@Å
+const;
+*model_distilbert_embeddings_LayerNorm_bias
+
+€*@
+name8
+0
+.",
+*model_distilbert_embeddings_LayerNorm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€á¼*É
+const=
+,model_distilbert_embeddings_LayerNorm_weight
+
+€*B
+name:
+2
+0".
+,model_distilbert_embeddings_LayerNorm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀù¼*ã
+constJ
+9model_distilbert_transformer_layer_0_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_0_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€’½*õ
+constS
+;model_distilbert_transformer_layer_0_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_0_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀª½*ã
+constJ
+9model_distilbert_transformer_layer_0_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_0_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€«Í+õ
+constS
+;model_distilbert_transformer_layer_0_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_0_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÃÍ+ã
+constJ
+9model_distilbert_transformer_layer_0_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_0_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€Äİ,õ
+constS
+;model_distilbert_transformer_layer_0_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_0_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÜİ,ç
+constL
+;model_distilbert_transformer_layer_0_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_0_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€İí-ù
+constU
+=model_distilbert_transformer_layer_0_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_0_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀõí-ß
+constH
+7model_distilbert_transformer_layer_0_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_0_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€öı.ã
+constJ
+9model_distilbert_transformer_layer_0_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_0_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀş.Õ
+constC
+2model_distilbert_transformer_layer_0_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_0_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€§ş.ç
+constL
+4model_distilbert_transformer_layer_0_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_0_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ‡ÿ.Õ
+constC
+2model_distilbert_transformer_layer_0_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_0_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ˆ¿3ç
+constL
+4model_distilbert_transformer_layer_0_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_0_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ ¿3ç
+constL
+;model_distilbert_transformer_layer_0_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_0_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¡ÿ7ë
+constN
+=model_distilbert_transformer_layer_0_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_0_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀ¹ÿ7ã
+constJ
+9model_distilbert_transformer_layer_1_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_1_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€Òÿ7õ
+constS
+;model_distilbert_transformer_layer_1_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_1_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀêÿ7ã
+constJ
+9model_distilbert_transformer_layer_1_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_1_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ë9õ
+constS
+;model_distilbert_transformer_layer_1_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_1_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀƒ9ã
+constJ
+9model_distilbert_transformer_layer_1_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_1_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€„ :õ
+constS
+;model_distilbert_transformer_layer_1_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_1_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀœ :ç
+constL
+;model_distilbert_transformer_layer_1_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_1_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€°;ù
+constU
+=model_distilbert_transformer_layer_1_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_1_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀµ°;ß
+constH
+7model_distilbert_transformer_layer_1_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_1_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¶À<ã
+constJ
+9model_distilbert_transformer_layer_1_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_1_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀÎÀ<Õ
+constC
+2model_distilbert_transformer_layer_1_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_1_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€çÀ<ç
+constL
+4model_distilbert_transformer_layer_1_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_1_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÇÁ<Õ
+constC
+2model_distilbert_transformer_layer_1_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_1_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ÈAç
+constL
+4model_distilbert_transformer_layer_1_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_1_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀàAç
+constL
+;model_distilbert_transformer_layer_1_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_1_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€áÁEë
+constN
+=model_distilbert_transformer_layer_1_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_1_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀùÁEã
+constJ
+9model_distilbert_transformer_layer_2_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_2_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€’ÂEõ
+constS
+;model_distilbert_transformer_layer_2_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_2_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀªÂEã
+constJ
+9model_distilbert_transformer_layer_2_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_2_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€«ÒFõ
+constS
+;model_distilbert_transformer_layer_2_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_2_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÃÒFã
+constJ
+9model_distilbert_transformer_layer_2_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_2_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ÄâGõ
+constS
+;model_distilbert_transformer_layer_2_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_2_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÜâGç
+constL
+;model_distilbert_transformer_layer_2_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_2_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€İòHù
+constU
+=model_distilbert_transformer_layer_2_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_2_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀõòHß
+constH
+7model_distilbert_transformer_layer_2_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_2_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ö‚Jã
+constJ
+9model_distilbert_transformer_layer_2_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_2_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀƒJÕ
+constC
+2model_distilbert_transformer_layer_2_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_2_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€§ƒJç
+constL
+4model_distilbert_transformer_layer_2_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_2_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ‡„JÕ
+constC
+2model_distilbert_transformer_layer_2_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_2_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ˆÄNç
+constL
+4model_distilbert_transformer_layer_2_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_2_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ ÄNç
+constL
+;model_distilbert_transformer_layer_2_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_2_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¡„Së
+constN
+=model_distilbert_transformer_layer_2_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_2_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀ¹„Sã
+constJ
+9model_distilbert_transformer_layer_3_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_3_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€Ò„Sõ
+constS
+;model_distilbert_transformer_layer_3_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_3_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀê„Sã
+constJ
+9model_distilbert_transformer_layer_3_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_3_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ë”Tõ
+constS
+;model_distilbert_transformer_layer_3_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_3_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀƒ•Tã
+constJ
+9model_distilbert_transformer_layer_3_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_3_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€„¥Uõ
+constS
+;model_distilbert_transformer_layer_3_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_3_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀœ¥Uç
+constL
+;model_distilbert_transformer_layer_3_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_3_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€µVù
+constU
+=model_distilbert_transformer_layer_3_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_3_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀµµVß
+constH
+7model_distilbert_transformer_layer_3_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_3_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¶ÅWã
+constJ
+9model_distilbert_transformer_layer_3_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_3_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀÎÅWÕ
+constC
+2model_distilbert_transformer_layer_3_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_3_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€çÅWç
+constL
+4model_distilbert_transformer_layer_3_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_3_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÇÆWÕ
+constC
+2model_distilbert_transformer_layer_3_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_3_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€È†\ç
+constL
+4model_distilbert_transformer_layer_3_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_3_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀà†\ç
+constL
+;model_distilbert_transformer_layer_3_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_3_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€áÆ`ë
+constN
+=model_distilbert_transformer_layer_3_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_3_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀùÆ`ã
+constJ
+9model_distilbert_transformer_layer_4_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_4_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€’Ç`õ
+constS
+;model_distilbert_transformer_layer_4_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_4_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀªÇ`ã
+constJ
+9model_distilbert_transformer_layer_4_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_4_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€«×aõ
+constS
+;model_distilbert_transformer_layer_4_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_4_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÃ×aã
+constJ
+9model_distilbert_transformer_layer_4_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_4_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€Äçbõ
+constS
+;model_distilbert_transformer_layer_4_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_4_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÜçbç
+constL
+;model_distilbert_transformer_layer_4_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_4_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€İ÷cù
+constU
+=model_distilbert_transformer_layer_4_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_4_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀõ÷cß
+constH
+7model_distilbert_transformer_layer_4_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_4_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ö‡eã
+constJ
+9model_distilbert_transformer_layer_4_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_4_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀˆeÕ
+constC
+2model_distilbert_transformer_layer_4_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_4_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€§ˆeç
+constL
+4model_distilbert_transformer_layer_4_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_4_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ‡‰eÕ
+constC
+2model_distilbert_transformer_layer_4_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_4_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ˆÉiç
+constL
+4model_distilbert_transformer_layer_4_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_4_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀ Éiç
+constL
+;model_distilbert_transformer_layer_4_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_4_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¡‰në
+constN
+=model_distilbert_transformer_layer_4_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_4_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀ¹‰nã
+constJ
+9model_distilbert_transformer_layer_5_attention_q_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_5_attention_q_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€Ò‰nõ
+constS
+;model_distilbert_transformer_layer_5_attention_q_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_5_attention_q_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀê‰nã
+constJ
+9model_distilbert_transformer_layer_5_attention_k_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_5_attention_k_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ë™oõ
+constS
+;model_distilbert_transformer_layer_5_attention_k_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_5_attention_k_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀƒšoã
+constJ
+9model_distilbert_transformer_layer_5_attention_v_lin_bias
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_5_attention_v_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€„ªpõ
+constS
+;model_distilbert_transformer_layer_5_attention_v_lin_weight
+
+€
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_5_attention_v_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀœªpç
+constL
+;model_distilbert_transformer_layer_5_attention_out_lin_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_5_attention_out_lin_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€ºqù
+constU
+=model_distilbert_transformer_layer_5_attention_out_lin_weight
+
+€
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_5_attention_out_lin_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀµºqß
+constH
+7model_distilbert_transformer_layer_5_sa_layer_norm_bias
+
+€*M
+nameE
+=
+;"9
+7model_distilbert_transformer_layer_5_sa_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€¶Êrã
+constJ
+9model_distilbert_transformer_layer_5_sa_layer_norm_weight
+
+€*O
+nameG
+?
+=";
+9model_distilbert_transformer_layer_5_sa_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀÎÊrÕ
+constC
+2model_distilbert_transformer_layer_5_ffn_lin1_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_5_ffn_lin1_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€çÊrç
+constL
+4model_distilbert_transformer_layer_5_ffn_lin1_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_5_ffn_lin1_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀÇËrÕ
+constC
+2model_distilbert_transformer_layer_5_ffn_lin2_bias
+
+€*H
+name@
+8
+6"4
+2model_distilbert_transformer_layer_5_ffn_lin2_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€È‹wç
+constL
+4model_distilbert_transformer_layer_5_ffn_lin2_weight
+
+€
+€*J
+nameB
+:
+8"6
+4model_distilbert_transformer_layer_5_ffn_lin2_weight*D
+val=
+
+€
+€*%
+@model_path/weights/weight.binÀà‹wç
+constL
+;model_distilbert_transformer_layer_5_output_layer_norm_bias
+
+€*Q
+nameI
+A
+?"=
+;model_distilbert_transformer_layer_5_output_layer_norm_bias*=
+val6
+
+€*%
+@model_path/weights/weight.bin€áË{ë
+constN
+=model_distilbert_transformer_layer_5_output_layer_norm_weight
+
+€*S
+nameK
+C
+A"?
+=model_distilbert_transformer_layer_5_output_layer_norm_weight*=
+val6
+
+€*%
+@model_path/weights/weight.binÀùË{‚
+const%
+model_qa_outputs_bias
+
+
+*+
+name#
+
+"
+model_qa_outputs_bias*%
+val
+
+
+
+
+
+
+(¤¿¸EÍ¸«
+const.
+model_qa_outputs_weight
+
+
+€*-
+name%
+
+"
+model_qa_outputs_weight*C
+val<
+
+
+€*%
+@model_path/weights/weight.bin€’Ì{M
+const
+var_6
+*
+name
+
+
+"
+op_6*
+val
+
+
+
+
+Ì¼Œ+S
+const
+var_8
+*
+name
+
+
+"
+op_8*
+val
+
+
+
+ÿÿÿÿÿÿÿÿÿL
+const
+var_11
+*
+name
+
+	"
+op_11*
+val
+
+
+ g
+const
+input_embeds_axis_0
+*)
+name!
+
+"
+input_embeds_axis_0*
+val
+
+
+ Ğ
+gather;
+x6
+4
+2model_distilbert_embeddings_word_embeddings_weight
+indices
+
+	input_ids
+axis
+
+input_embeds_axis_0*
+input_embeds
+
+
+€
+€*"
+name
+
+"
+input_embedsµ
+const3
+position_embeddings_1
+
+
+€
+€*+
+name#
+
+"
+position_embeddings_1*J
+valC
+
+
+€
+€*%
+@model_path/weights/weight.binÀÂÌ{‚
+add
+x
+
+input_embeds
+y
+
+position_embeddings_1%
+input_3
+
+
+€
+€*
+name
+
+"	
+input_3v
+const
+input_5_axes_0
+
+
+*$
+name
+
+"
+input_5_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ‰
+
+layer_norm
+x
+	
+input_3
+axes
+
+input_5_axes_09
+gamma0
+.
+,model_distilbert_embeddings_LayerNorm_weight6
+beta.
+,
+*model_distilbert_embeddings_LayerNorm_bias
+epsilon	
+
+var_6%
+input_5
+
+
+€
+€*
+name
+
+"	
+input_5ô
+linear
+x
+	
+input_5I
+weight?
+=
+;model_distilbert_transformer_layer_0_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_0_attention_q_lin_bias&
+linear_0
+
+
+€
+€*
+name
+
+"
+
+linear_0h
+const
+var_68
+
+
+*
+name
+
+	"
+op_68**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@y
+reshape
+x
+
+
+linear_0
+shape
+
+
+var_68)
+var_69
+
+
+€
+
+@*
+name
+
+	"
+op_69ô
+linear
+x
+	
+input_5I
+weight?
+=
+;model_distilbert_transformer_layer_0_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_0_attention_k_lin_bias&
+linear_1
+
+
+€
+€*
+name
+
+"
+
+linear_1h
+const
+var_74
+
+
+*
+name
+
+	"
+op_74**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@y
+reshape
+x
+
+
+linear_1
+shape
+
+
+var_74)
+var_75
+
+
+€
+
+@*
+name
+
+	"
+op_75ô
+linear
+x
+	
+input_5I
+weight?
+=
+;model_distilbert_transformer_layer_0_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_0_attention_v_lin_bias&
+linear_2
+
+
+€
+€*
+name
+
+"
+
+linear_2h
+const
+var_80
+
+
+*
+name
+
+	"
+op_80**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@y
+reshape
+x
+
+
+linear_2
+shape
+
+
+var_80)
+var_81
+
+
+€
+
+@*
+name
+
+	"
+op_81h
+const
+
+v_1_perm_0
+
+
+* 
+name
+
+"
+
+v_1_perm_0*!
+val
+
+
+
+
+
+ f
+const
+_inversed_q_3_y_0
+*'
+name
+
+"
+_inversed_q_3_y_0*
+val
+
+
+
+
+   >‰
+mul
+x
+
+
+var_69
+y
+
+_inversed_q_3_y_00
+_inversed_q_3
+
+
+€
+
+@*#
+name
+
+"
+_inversed_q_3m
+const
+scores_1_transpose_x_0
+*,
+name$
+
+"
+scores_1_transpose_x_0*
+val
+
+
+ m
+const
+scores_1_transpose_y_0
+*,
+name$
+
+"
+scores_1_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_18_perm_0
+
+
+*)
+name!
+
+"
+transpose_18_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_19_perm_0
+
+
+*)
+name!
+
+"
+transpose_19_perm_0*!
+val
+
+
+
+
+
+ ’
+	transpose
+x
+
+
+var_75
+perm
+
+transpose_19_perm_0/
+transpose_51
+
+
+
+@
+€*"
+name
+
+"
+transpose_51™
+	transpose
+x
+
+_inversed_q_3
+perm
+
+transpose_18_perm_0/
+transpose_52
+
+
+
+€
+@*"
+name
+
+"
+transpose_52Ú
+matmul
+x
+
+transpose_52
+y
+
+transpose_51)
+transpose_x
+
+scores_1_transpose_x_0)
+transpose_y
+
+scores_1_transpose_y_0,
+scores_1 
+
+
+
+€
+€*
+name
+
+"
+
+scores_1m
+equal
+x
+
+attention_mask
+y
+
+
+var_11
+var_87
+
+
+€*
+name
+
+	"
+op_87`
+const
+var_88
+
+
+*
+name
+
+	"
+op_88*"
+val
+
+
+
+	
+€w
+reshape
+x
+
+
+var_87
+shape
+
+
+var_88)
+var_89
+
+
+
+
+€*
+name
+
+	"
+op_89o
+const
+mask_3_reps_0
+
+
+*#
+name
+
+"
+mask_3_reps_0*"
+val
+
+
+
+	
+€|
+tile
+x
+
+
+var_89
+reps
+
+mask_3_reps_0*
+mask_3 
+
+
+
+€
+€*
+name
+
+
+"
+mask_3O
+const
+var_91
+*
+name
+
+	"
+op_91*
+val
+
+
+
+
+ÿÿÿŒ
+select
+cond
+
+
+mask_3
+a
+
+
+var_91
+b
+
+
+scores_1+
+input_7 
+
+
+
+€
+€*
+name
+
+"	
+input_7z
+softmax
+x
+	
+input_7
+axis	
+
+var_8+
+input_9 
+
+
+
+€
+€*
+name
+
+"	
+input_9c
+const
+x_7_transpose_x_0
+*'
+name
+
+"
+x_7_transpose_x_0*
+val
+
+
+ c
+const
+x_7_transpose_y_0
+*'
+name
+
+"
+x_7_transpose_y_0*
+val
+
+
+ ‰
+	transpose
+x
+
+
+var_81
+perm
+
+
+v_1_perm_0/
+transpose_53
+
+
+
+€
+@*"
+name
+
+"
+transpose_53À
+matmul
+x
+	
+input_9
+y
+
+transpose_53$
+transpose_x
+
+x_7_transpose_x_0$
+transpose_y
+
+x_7_transpose_y_0&
+x_7
+
+
+
+€
+@*
+name
+	
+"
+x_7m
+const
+var_97_perm_0
+
+
+*"
+name
+
+"
+op_97_perm_0*!
+val
+
+
+
+
+
+ h
+const
+var_99
+
+
+*
+name
+
+	"
+op_99**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€‰
+	transpose
+x
+
+x_7
+perm
+
+var_97_perm_0/
+transpose_50
+
+
+€
+
+@*"
+name
+
+"
+transpose_50}
+reshape
+x
+
+transpose_50
+shape
+
+
+var_99&
+input_11
+
+
+€
+€*
+name
+
+"
+
+input_11ù
+linear
+x
+
+
+input_11K
+weightA
+?
+=model_distilbert_transformer_layer_0_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_0_attention_out_lin_bias&
+linear_3
+
+
+€
+€*
+name
+
+"
+
+linear_3r
+add
+x
+
+
+linear_3
+y
+	
+input_5&
+input_13
+
+
+€
+€*
+name
+
+"
+
+input_13x
+const
+input_15_axes_0
+
+
+*%
+name
+
+"
+input_15_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ§
+
+layer_norm
+x
+
+
+input_13
+axes
+
+input_15_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_0_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_0_sa_layer_norm_bias
+epsilon	
+
+var_6&
+input_15
+
+
+€
+€*
+name
+
+"
+
+input_15ç
+linear
+x
+
+
+input_15B
+weight8
+6
+4model_distilbert_transformer_layer_0_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_0_ffn_lin1_bias&
+linear_4
+
+
+€
+€*
+name
+
+"
+
+linear_4c
+const
+input_19_mode_0
+*%
+name
+
+"
+input_19_mode_0*
+val
+
+	"
+EXACT~
+gelu
+x
+
+
+linear_4
+mode
+
+input_19_mode_0&
+input_19
+
+
+€
+€*
+name
+
+"
+
+input_19ç
+linear
+x
+
+
+input_19B
+weight8
+6
+4model_distilbert_transformer_layer_0_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_0_ffn_lin2_bias&
+linear_5
+
+
+€
+€*
+name
+
+"
+
+linear_5s
+add
+x
+
+
+linear_5
+y
+
+
+input_15&
+input_23
+
+
+€
+€*
+name
+
+"
+
+input_23v
+const
+query_3_axes_0
+
+
+*$
+name
+
+"
+query_3_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ¬
+
+layer_norm
+x
+
+
+input_23
+axes
+
+query_3_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_0_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_0_output_layer_norm_bias
+epsilon	
+
+var_6%
+query_3
+
+
+€
+€*
+name
+
+"	
+query_3ô
+linear
+x
+	
+query_3I
+weight?
+=
+;model_distilbert_transformer_layer_1_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_1_attention_q_lin_bias&
+linear_6
+
+
+€
+€*
+name
+
+"
+
+linear_6j
+const
+var_137
+
+
+*
+name
+
+
+"
+op_137**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@|
+reshape
+x
+
+
+linear_6
+shape
+	
+var_137*
+var_138
+
+
+€
+
+@*
+name
+
+
+"
+op_138ô
+linear
+x
+	
+query_3I
+weight?
+=
+;model_distilbert_transformer_layer_1_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_1_attention_k_lin_bias&
+linear_7
+
+
+€
+€*
+name
+
+"
+
+linear_7j
+const
+var_143
+
+
+*
+name
+
+
+"
+op_143**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@|
+reshape
+x
+
+
+linear_7
+shape
+	
+var_143*
+var_144
+
+
+€
+
+@*
+name
+
+
+"
+op_144ô
+linear
+x
+	
+query_3I
+weight?
+=
+;model_distilbert_transformer_layer_1_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_1_attention_v_lin_bias&
+linear_8
+
+
+€
+€*
+name
+
+"
+
+linear_8j
+const
+var_149
+
+
+*
+name
+
+
+"
+op_149**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@|
+reshape
+x
+
+
+linear_8
+shape
+	
+var_149*
+var_150
+
+
+€
+
+@*
+name
+
+
+"
+op_150h
+const
+
+v_3_perm_0
+
+
+* 
+name
+
+"
+
+v_3_perm_0*!
+val
+
+
+
+
+
+ f
+const
+_inversed_q_7_y_0
+*'
+name
+
+"
+_inversed_q_7_y_0*
+val
+
+
+
+
+   >Š
+mul
+x
+	
+var_138
+y
+
+_inversed_q_7_y_00
+_inversed_q_7
+
+
+€
+
+@*#
+name
+
+"
+_inversed_q_7m
+const
+scores_3_transpose_x_0
+*,
+name$
+
+"
+scores_3_transpose_x_0*
+val
+
+
+ m
+const
+scores_3_transpose_y_0
+*,
+name$
+
+"
+scores_3_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_20_perm_0
+
+
+*)
+name!
+
+"
+transpose_20_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_21_perm_0
+
+
+*)
+name!
+
+"
+transpose_21_perm_0*!
+val
+
+
+
+
+
+ “
+	transpose
+x
+	
+var_144
+perm
+
+transpose_21_perm_0/
+transpose_47
+
+
+
+@
+€*"
+name
+
+"
+transpose_47™
+	transpose
+x
+
+_inversed_q_7
+perm
+
+transpose_20_perm_0/
+transpose_48
+
+
+
+€
+@*"
+name
+
+"
+transpose_48Ú
+matmul
+x
+
+transpose_48
+y
+
+transpose_47)
+transpose_x
+
+scores_3_transpose_x_0)
+transpose_y
+
+scores_3_transpose_y_0,
+scores_3 
+
+
+
+€
+€*
+name
+
+"
+
+scores_3Q
+const
+var_160
+*
+name
+
+
+"
+op_160*
+val
+
+
+
+
+ÿÿÿ
+select
+cond
+
+
+mask_3
+a
+	
+var_160
+b
+
+
+scores_3,
+input_25 
+
+
+
+€
+€*
+name
+
+"
+
+input_25}
+softmax
+x
+
+
+input_25
+axis	
+
+var_8,
+input_27 
+
+
+
+€
+€*
+name
+
+"
+
+input_27e
+const
+x_15_transpose_x_0
+*(
+name 
+
+"
+x_15_transpose_x_0*
+val
+
+
+ e
+const
+x_15_transpose_y_0
+*(
+name 
+
+"
+x_15_transpose_y_0*
+val
+
+
+ Š
+	transpose
+x
+	
+var_150
+perm
+
+
+v_3_perm_0/
+transpose_49
+
+
+
+€
+@*"
+name
+
+"
+transpose_49Å
+matmul
+x
+
+
+input_27
+y
+
+transpose_49%
+transpose_x
+
+x_15_transpose_x_0%
+transpose_y
+
+x_15_transpose_y_0'
+x_15
+
+
+
+€
+@*
+name
+
+
+"
+x_15o
+const
+var_166_perm_0
+
+
+*#
+name
+
+"
+op_166_perm_0*!
+val
+
+
+
+
+
+ j
+const
+var_168
+
+
+*
+name
+
+
+"
+op_168**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€‹
+	transpose
+x
+
+x_15
+perm
+
+var_166_perm_0/
+transpose_46
+
+
+€
+
+@*"
+name
+
+"
+transpose_46~
+reshape
+x
+
+transpose_46
+shape
+	
+var_168&
+input_29
+
+
+€
+€*
+name
+
+"
+
+input_29ù
+linear
+x
+
+
+input_29K
+weightA
+?
+=model_distilbert_transformer_layer_1_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_1_attention_out_lin_bias&
+linear_9
+
+
+€
+€*
+name
+
+"
+
+linear_9r
+add
+x
+
+
+linear_9
+y
+	
+query_3&
+input_31
+
+
+€
+€*
+name
+
+"
+
+input_31x
+const
+input_33_axes_0
+
+
+*%
+name
+
+"
+input_33_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ§
+
+layer_norm
+x
+
+
+input_31
+axes
+
+input_33_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_1_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_1_sa_layer_norm_bias
+epsilon	
+
+var_6&
+input_33
+
+
+€
+€*
+name
+
+"
+
+input_33é
+linear
+x
+
+
+input_33B
+weight8
+6
+4model_distilbert_transformer_layer_1_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_1_ffn_lin1_bias'
+	linear_10
+
+
+€
+€*
+name
+
+"
+	linear_10c
+const
+input_37_mode_0
+*%
+name
+
+"
+input_37_mode_0*
+val
+
+	"
+EXACT
+gelu
+x
+
+	linear_10
+mode
+
+input_37_mode_0&
+input_37
+
+
+€
+€*
+name
+
+"
+
+input_37é
+linear
+x
+
+
+input_37B
+weight8
+6
+4model_distilbert_transformer_layer_1_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_1_ffn_lin2_bias'
+	linear_11
+
+
+€
+€*
+name
+
+"
+	linear_11t
+add
+x
+
+	linear_11
+y
+
+
+input_33&
+input_41
+
+
+€
+€*
+name
+
+"
+
+input_41v
+const
+query_5_axes_0
+
+
+*$
+name
+
+"
+query_5_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ¬
+
+layer_norm
+x
+
+
+input_41
+axes
+
+query_5_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_1_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_1_output_layer_norm_bias
+epsilon	
+
+var_6%
+query_5
+
+
+€
+€*
+name
+
+"	
+query_5ö
+linear
+x
+	
+query_5I
+weight?
+=
+;model_distilbert_transformer_layer_2_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_2_attention_q_lin_bias'
+	linear_12
+
+
+€
+€*
+name
+
+"
+	linear_12j
+const
+var_206
+
+
+*
+name
+
+
+"
+op_206**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_12
+shape
+	
+var_206*
+var_207
+
+
+€
+
+@*
+name
+
+
+"
+op_207ö
+linear
+x
+	
+query_5I
+weight?
+=
+;model_distilbert_transformer_layer_2_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_2_attention_k_lin_bias'
+	linear_13
+
+
+€
+€*
+name
+
+"
+	linear_13j
+const
+var_212
+
+
+*
+name
+
+
+"
+op_212**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_13
+shape
+	
+var_212*
+var_213
+
+
+€
+
+@*
+name
+
+
+"
+op_213ö
+linear
+x
+	
+query_5I
+weight?
+=
+;model_distilbert_transformer_layer_2_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_2_attention_v_lin_bias'
+	linear_14
+
+
+€
+€*
+name
+
+"
+	linear_14j
+const
+var_218
+
+
+*
+name
+
+
+"
+op_218**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_14
+shape
+	
+var_218*
+var_219
+
+
+€
+
+@*
+name
+
+
+"
+op_219h
+const
+
+v_5_perm_0
+
+
+* 
+name
+
+"
+
+v_5_perm_0*!
+val
+
+
+
+
+
+ h
+const
+_inversed_q_11_y_0
+*(
+name 
+
+"
+_inversed_q_11_y_0*
+val
+
+
+
+
+   >
+mul
+x
+	
+var_207
+y
+
+_inversed_q_11_y_01
+_inversed_q_11
+
+
+€
+
+@*$
+name
+
+"
+_inversed_q_11m
+const
+scores_5_transpose_x_0
+*,
+name$
+
+"
+scores_5_transpose_x_0*
+val
+
+
+ m
+const
+scores_5_transpose_y_0
+*,
+name$
+
+"
+scores_5_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_22_perm_0
+
+
+*)
+name!
+
+"
+transpose_22_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_23_perm_0
+
+
+*)
+name!
+
+"
+transpose_23_perm_0*!
+val
+
+
+
+
+
+ “
+	transpose
+x
+	
+var_213
+perm
+
+transpose_23_perm_0/
+transpose_43
+
+
+
+@
+€*"
+name
+
+"
+transpose_43š
+	transpose
+x
+
+_inversed_q_11
+perm
+
+transpose_22_perm_0/
+transpose_44
+
+
+
+€
+@*"
+name
+
+"
+transpose_44Ú
+matmul
+x
+
+transpose_44
+y
+
+transpose_43)
+transpose_x
+
+scores_5_transpose_x_0)
+transpose_y
+
+scores_5_transpose_y_0,
+scores_5 
+
+
+
+€
+€*
+name
+
+"
+
+scores_5Q
+const
+var_229
+*
+name
+
+
+"
+op_229*
+val
+
+
+
+
+ÿÿÿ
+select
+cond
+
+
+mask_3
+a
+	
+var_229
+b
+
+
+scores_5,
+input_43 
+
+
+
+€
+€*
+name
+
+"
+
+input_43}
+softmax
+x
+
+
+input_43
+axis	
+
+var_8,
+input_45 
+
+
+
+€
+€*
+name
+
+"
+
+input_45e
+const
+x_23_transpose_x_0
+*(
+name 
+
+"
+x_23_transpose_x_0*
+val
+
+
+ e
+const
+x_23_transpose_y_0
+*(
+name 
+
+"
+x_23_transpose_y_0*
+val
+
+
+ Š
+	transpose
+x
+	
+var_219
+perm
+
+
+v_5_perm_0/
+transpose_45
+
+
+
+€
+@*"
+name
+
+"
+transpose_45Å
+matmul
+x
+
+
+input_45
+y
+
+transpose_45%
+transpose_x
+
+x_23_transpose_x_0%
+transpose_y
+
+x_23_transpose_y_0'
+x_23
+
+
+
+€
+@*
+name
+
+
+"
+x_23o
+const
+var_235_perm_0
+
+
+*#
+name
+
+"
+op_235_perm_0*!
+val
+
+
+
+
+
+ j
+const
+var_237
+
+
+*
+name
+
+
+"
+op_237**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€‹
+	transpose
+x
+
+x_23
+perm
+
+var_235_perm_0/
+transpose_42
+
+
+€
+
+@*"
+name
+
+"
+transpose_42~
+reshape
+x
+
+transpose_42
+shape
+	
+var_237&
+input_47
+
+
+€
+€*
+name
+
+"
+
+input_47û
+linear
+x
+
+
+input_47K
+weightA
+?
+=model_distilbert_transformer_layer_2_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_2_attention_out_lin_bias'
+	linear_15
+
+
+€
+€*
+name
+
+"
+	linear_15s
+add
+x
+
+	linear_15
+y
+	
+query_5&
+input_49
+
+
+€
+€*
+name
+
+"
+
+input_49x
+const
+input_51_axes_0
+
+
+*%
+name
+
+"
+input_51_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ§
+
+layer_norm
+x
+
+
+input_49
+axes
+
+input_51_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_2_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_2_sa_layer_norm_bias
+epsilon	
+
+var_6&
+input_51
+
+
+€
+€*
+name
+
+"
+
+input_51é
+linear
+x
+
+
+input_51B
+weight8
+6
+4model_distilbert_transformer_layer_2_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_2_ffn_lin1_bias'
+	linear_16
+
+
+€
+€*
+name
+
+"
+	linear_16c
+const
+input_55_mode_0
+*%
+name
+
+"
+input_55_mode_0*
+val
+
+	"
+EXACT
+gelu
+x
+
+	linear_16
+mode
+
+input_55_mode_0&
+input_55
+
+
+€
+€*
+name
+
+"
+
+input_55é
+linear
+x
+
+
+input_55B
+weight8
+6
+4model_distilbert_transformer_layer_2_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_2_ffn_lin2_bias'
+	linear_17
+
+
+€
+€*
+name
+
+"
+	linear_17t
+add
+x
+
+	linear_17
+y
+
+
+input_51&
+input_59
+
+
+€
+€*
+name
+
+"
+
+input_59v
+const
+query_7_axes_0
+
+
+*$
+name
+
+"
+query_7_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ¬
+
+layer_norm
+x
+
+
+input_59
+axes
+
+query_7_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_2_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_2_output_layer_norm_bias
+epsilon	
+
+var_6%
+query_7
+
+
+€
+€*
+name
+
+"	
+query_7ö
+linear
+x
+	
+query_7I
+weight?
+=
+;model_distilbert_transformer_layer_3_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_3_attention_q_lin_bias'
+	linear_18
+
+
+€
+€*
+name
+
+"
+	linear_18j
+const
+var_275
+
+
+*
+name
+
+
+"
+op_275**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_18
+shape
+	
+var_275*
+var_276
+
+
+€
+
+@*
+name
+
+
+"
+op_276ö
+linear
+x
+	
+query_7I
+weight?
+=
+;model_distilbert_transformer_layer_3_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_3_attention_k_lin_bias'
+	linear_19
+
+
+€
+€*
+name
+
+"
+	linear_19j
+const
+var_281
+
+
+*
+name
+
+
+"
+op_281**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_19
+shape
+	
+var_281*
+var_282
+
+
+€
+
+@*
+name
+
+
+"
+op_282ö
+linear
+x
+	
+query_7I
+weight?
+=
+;model_distilbert_transformer_layer_3_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_3_attention_v_lin_bias'
+	linear_20
+
+
+€
+€*
+name
+
+"
+	linear_20j
+const
+var_287
+
+
+*
+name
+
+
+"
+op_287**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_20
+shape
+	
+var_287*
+var_288
+
+
+€
+
+@*
+name
+
+
+"
+op_288h
+const
+
+v_7_perm_0
+
+
+* 
+name
+
+"
+
+v_7_perm_0*!
+val
+
+
+
+
+
+ h
+const
+_inversed_q_15_y_0
+*(
+name 
+
+"
+_inversed_q_15_y_0*
+val
+
+
+
+
+   >
+mul
+x
+	
+var_276
+y
+
+_inversed_q_15_y_01
+_inversed_q_15
+
+
+€
+
+@*$
+name
+
+"
+_inversed_q_15m
+const
+scores_7_transpose_x_0
+*,
+name$
+
+"
+scores_7_transpose_x_0*
+val
+
+
+ m
+const
+scores_7_transpose_y_0
+*,
+name$
+
+"
+scores_7_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_24_perm_0
+
+
+*)
+name!
+
+"
+transpose_24_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_25_perm_0
+
+
+*)
+name!
+
+"
+transpose_25_perm_0*!
+val
+
+
+
+
+
+ “
+	transpose
+x
+	
+var_282
+perm
+
+transpose_25_perm_0/
+transpose_39
+
+
+
+@
+€*"
+name
+
+"
+transpose_39š
+	transpose
+x
+
+_inversed_q_15
+perm
+
+transpose_24_perm_0/
+transpose_40
+
+
+
+€
+@*"
+name
+
+"
+transpose_40Ú
+matmul
+x
+
+transpose_40
+y
+
+transpose_39)
+transpose_x
+
+scores_7_transpose_x_0)
+transpose_y
+
+scores_7_transpose_y_0,
+scores_7 
+
+
+
+€
+€*
+name
+
+"
+
+scores_7Q
+const
+var_298
+*
+name
+
+
+"
+op_298*
+val
+
+
+
+
+ÿÿÿ
+select
+cond
+
+
+mask_3
+a
+	
+var_298
+b
+
+
+scores_7,
+input_61 
+
+
+
+€
+€*
+name
+
+"
+
+input_61}
+softmax
+x
+
+
+input_61
+axis	
+
+var_8,
+input_63 
+
+
+
+€
+€*
+name
+
+"
+
+input_63e
+const
+x_31_transpose_x_0
+*(
+name 
+
+"
+x_31_transpose_x_0*
+val
+
+
+ e
+const
+x_31_transpose_y_0
+*(
+name 
+
+"
+x_31_transpose_y_0*
+val
+
+
+ Š
+	transpose
+x
+	
+var_288
+perm
+
+
+v_7_perm_0/
+transpose_41
+
+
+
+€
+@*"
+name
+
+"
+transpose_41Å
+matmul
+x
+
+
+input_63
+y
+
+transpose_41%
+transpose_x
+
+x_31_transpose_x_0%
+transpose_y
+
+x_31_transpose_y_0'
+x_31
+
+
+
+€
+@*
+name
+
+
+"
+x_31o
+const
+var_304_perm_0
+
+
+*#
+name
+
+"
+op_304_perm_0*!
+val
+
+
+
+
+
+ j
+const
+var_306
+
+
+*
+name
+
+
+"
+op_306**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€‹
+	transpose
+x
+
+x_31
+perm
+
+var_304_perm_0/
+transpose_38
+
+
+€
+
+@*"
+name
+
+"
+transpose_38~
+reshape
+x
+
+transpose_38
+shape
+	
+var_306&
+input_65
+
+
+€
+€*
+name
+
+"
+
+input_65û
+linear
+x
+
+
+input_65K
+weightA
+?
+=model_distilbert_transformer_layer_3_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_3_attention_out_lin_bias'
+	linear_21
+
+
+€
+€*
+name
+
+"
+	linear_21s
+add
+x
+
+	linear_21
+y
+	
+query_7&
+input_67
+
+
+€
+€*
+name
+
+"
+
+input_67x
+const
+input_69_axes_0
+
+
+*%
+name
+
+"
+input_69_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ§
+
+layer_norm
+x
+
+
+input_67
+axes
+
+input_69_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_3_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_3_sa_layer_norm_bias
+epsilon	
+
+var_6&
+input_69
+
+
+€
+€*
+name
+
+"
+
+input_69é
+linear
+x
+
+
+input_69B
+weight8
+6
+4model_distilbert_transformer_layer_3_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_3_ffn_lin1_bias'
+	linear_22
+
+
+€
+€*
+name
+
+"
+	linear_22c
+const
+input_73_mode_0
+*%
+name
+
+"
+input_73_mode_0*
+val
+
+	"
+EXACT
+gelu
+x
+
+	linear_22
+mode
+
+input_73_mode_0&
+input_73
+
+
+€
+€*
+name
+
+"
+
+input_73é
+linear
+x
+
+
+input_73B
+weight8
+6
+4model_distilbert_transformer_layer_3_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_3_ffn_lin2_bias'
+	linear_23
+
+
+€
+€*
+name
+
+"
+	linear_23t
+add
+x
+
+	linear_23
+y
+
+
+input_69&
+input_77
+
+
+€
+€*
+name
+
+"
+
+input_77v
+const
+query_9_axes_0
+
+
+*$
+name
+
+"
+query_9_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ¬
+
+layer_norm
+x
+
+
+input_77
+axes
+
+query_9_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_3_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_3_output_layer_norm_bias
+epsilon	
+
+var_6%
+query_9
+
+
+€
+€*
+name
+
+"	
+query_9ö
+linear
+x
+	
+query_9I
+weight?
+=
+;model_distilbert_transformer_layer_4_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_4_attention_q_lin_bias'
+	linear_24
+
+
+€
+€*
+name
+
+"
+	linear_24j
+const
+var_344
+
+
+*
+name
+
+
+"
+op_344**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_24
+shape
+	
+var_344*
+var_345
+
+
+€
+
+@*
+name
+
+
+"
+op_345ö
+linear
+x
+	
+query_9I
+weight?
+=
+;model_distilbert_transformer_layer_4_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_4_attention_k_lin_bias'
+	linear_25
+
+
+€
+€*
+name
+
+"
+	linear_25j
+const
+var_350
+
+
+*
+name
+
+
+"
+op_350**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_25
+shape
+	
+var_350*
+var_351
+
+
+€
+
+@*
+name
+
+
+"
+op_351ö
+linear
+x
+	
+query_9I
+weight?
+=
+;model_distilbert_transformer_layer_4_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_4_attention_v_lin_bias'
+	linear_26
+
+
+€
+€*
+name
+
+"
+	linear_26j
+const
+var_356
+
+
+*
+name
+
+
+"
+op_356**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_26
+shape
+	
+var_356*
+var_357
+
+
+€
+
+@*
+name
+
+
+"
+op_357h
+const
+
+v_9_perm_0
+
+
+* 
+name
+
+"
+
+v_9_perm_0*!
+val
+
+
+
+
+
+ h
+const
+_inversed_q_19_y_0
+*(
+name 
+
+"
+_inversed_q_19_y_0*
+val
+
+
+
+
+   >
+mul
+x
+	
+var_345
+y
+
+_inversed_q_19_y_01
+_inversed_q_19
+
+
+€
+
+@*$
+name
+
+"
+_inversed_q_19m
+const
+scores_9_transpose_x_0
+*,
+name$
+
+"
+scores_9_transpose_x_0*
+val
+
+
+ m
+const
+scores_9_transpose_y_0
+*,
+name$
+
+"
+scores_9_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_26_perm_0
+
+
+*)
+name!
+
+"
+transpose_26_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_27_perm_0
+
+
+*)
+name!
+
+"
+transpose_27_perm_0*!
+val
+
+
+
+
+
+ “
+	transpose
+x
+	
+var_351
+perm
+
+transpose_27_perm_0/
+transpose_35
+
+
+
+@
+€*"
+name
+
+"
+transpose_35š
+	transpose
+x
+
+_inversed_q_19
+perm
+
+transpose_26_perm_0/
+transpose_36
+
+
+
+€
+@*"
+name
+
+"
+transpose_36Ú
+matmul
+x
+
+transpose_36
+y
+
+transpose_35)
+transpose_x
+
+scores_9_transpose_x_0)
+transpose_y
+
+scores_9_transpose_y_0,
+scores_9 
+
+
+
+€
+€*
+name
+
+"
+
+scores_9Q
+const
+var_367
+*
+name
+
+
+"
+op_367*
+val
+
+
+
+
+ÿÿÿ
+select
+cond
+
+
+mask_3
+a
+	
+var_367
+b
+
+
+scores_9,
+input_79 
+
+
+
+€
+€*
+name
+
+"
+
+input_79}
+softmax
+x
+
+
+input_79
+axis	
+
+var_8,
+input_81 
+
+
+
+€
+€*
+name
+
+"
+
+input_81e
+const
+x_39_transpose_x_0
+*(
+name 
+
+"
+x_39_transpose_x_0*
+val
+
+
+ e
+const
+x_39_transpose_y_0
+*(
+name 
+
+"
+x_39_transpose_y_0*
+val
+
+
+ Š
+	transpose
+x
+	
+var_357
+perm
+
+
+v_9_perm_0/
+transpose_37
+
+
+
+€
+@*"
+name
+
+"
+transpose_37Å
+matmul
+x
+
+
+input_81
+y
+
+transpose_37%
+transpose_x
+
+x_39_transpose_x_0%
+transpose_y
+
+x_39_transpose_y_0'
+x_39
+
+
+
+€
+@*
+name
+
+
+"
+x_39o
+const
+var_373_perm_0
+
+
+*#
+name
+
+"
+op_373_perm_0*!
+val
+
+
+
+
+
+ j
+const
+var_375
+
+
+*
+name
+
+
+"
+op_375**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€‹
+	transpose
+x
+
+x_39
+perm
+
+var_373_perm_0/
+transpose_34
+
+
+€
+
+@*"
+name
+
+"
+transpose_34~
+reshape
+x
+
+transpose_34
+shape
+	
+var_375&
+input_83
+
+
+€
+€*
+name
+
+"
+
+input_83û
+linear
+x
+
+
+input_83K
+weightA
+?
+=model_distilbert_transformer_layer_4_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_4_attention_out_lin_bias'
+	linear_27
+
+
+€
+€*
+name
+
+"
+	linear_27s
+add
+x
+
+	linear_27
+y
+	
+query_9&
+input_85
+
+
+€
+€*
+name
+
+"
+
+input_85x
+const
+input_87_axes_0
+
+
+*%
+name
+
+"
+input_87_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ§
+
+layer_norm
+x
+
+
+input_85
+axes
+
+input_87_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_4_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_4_sa_layer_norm_bias
+epsilon	
+
+var_6&
+input_87
+
+
+€
+€*
+name
+
+"
+
+input_87é
+linear
+x
+
+
+input_87B
+weight8
+6
+4model_distilbert_transformer_layer_4_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_4_ffn_lin1_bias'
+	linear_28
+
+
+€
+€*
+name
+
+"
+	linear_28c
+const
+input_91_mode_0
+*%
+name
+
+"
+input_91_mode_0*
+val
+
+	"
+EXACT
+gelu
+x
+
+	linear_28
+mode
+
+input_91_mode_0&
+input_91
+
+
+€
+€*
+name
+
+"
+
+input_91é
+linear
+x
+
+
+input_91B
+weight8
+6
+4model_distilbert_transformer_layer_4_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_4_ffn_lin2_bias'
+	linear_29
+
+
+€
+€*
+name
+
+"
+	linear_29t
+add
+x
+
+	linear_29
+y
+
+
+input_87&
+input_95
+
+
+€
+€*
+name
+
+"
+
+input_95r
+const
+query_axes_0
+
+
+*"
+name
+
+"
+query_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ¦
+
+layer_norm
+x
+
+
+input_95
+axes
+
+query_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_4_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_4_output_layer_norm_bias
+epsilon	
+
+var_6#
+query
+
+
+€
+€*
+name
+
+	"
+queryô
+linear
+x	
+
+queryI
+weight?
+=
+;model_distilbert_transformer_layer_5_attention_q_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_5_attention_q_lin_bias'
+	linear_30
+
+
+€
+€*
+name
+
+"
+	linear_30j
+const
+var_413
+
+
+*
+name
+
+
+"
+op_413**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_30
+shape
+	
+var_413*
+var_414
+
+
+€
+
+@*
+name
+
+
+"
+op_414ô
+linear
+x	
+
+queryI
+weight?
+=
+;model_distilbert_transformer_layer_5_attention_k_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_5_attention_k_lin_bias'
+	linear_31
+
+
+€
+€*
+name
+
+"
+	linear_31j
+const
+var_419
+
+
+*
+name
+
+
+"
+op_419**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_31
+shape
+	
+var_419*
+var_420
+
+
+€
+
+@*
+name
+
+
+"
+op_420ô
+linear
+x	
+
+queryI
+weight?
+=
+;model_distilbert_transformer_layer_5_attention_v_lin_weightE
+bias=
+;
+9model_distilbert_transformer_layer_5_attention_v_lin_bias'
+	linear_32
+
+
+€
+€*
+name
+
+"
+	linear_32j
+const
+var_425
+
+
+*
+name
+
+
+"
+op_425**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ@}
+reshape
+x
+
+	linear_32
+shape
+	
+var_425*
+var_426
+
+
+€
+
+@*
+name
+
+
+"
+op_426d
+const
+v_perm_0
+
+
+*
+name
+
+"
+
+v_perm_0*!
+val
+
+
+
+
+
+ b
+const
+_inversed_q_y_0
+*%
+name
+
+"
+_inversed_q_y_0*
+val
+
+
+
+
+   >„
+mul
+x
+	
+var_414
+y
+
+_inversed_q_y_0.
+_inversed_q
+
+
+€
+
+@*!
+name
+
+"
+_inversed_qi
+const
+scores_transpose_x_0
+**
+name"
+
+"
+scores_transpose_x_0*
+val
+
+
+ i
+const
+scores_transpose_y_0
+**
+name"
+
+"
+scores_transpose_y_0*
+val
+
+
+ z
+const#
+transpose_28_perm_0
+
+
+*)
+name!
+
+"
+transpose_28_perm_0*!
+val
+
+
+
+
+
+ z
+const#
+transpose_29_perm_0
+
+
+*)
+name!
+
+"
+transpose_29_perm_0*!
+val
+
+
+
+
+
+ “
+	transpose
+x
+	
+var_420
+perm
+
+transpose_29_perm_0/
+transpose_31
+
+
+
+@
+€*"
+name
+
+"
+transpose_31—
+	transpose
+x
+
+_inversed_q
+perm
+
+transpose_28_perm_0/
+transpose_32
+
+
+
+€
+@*"
+name
+
+"
+transpose_32Ò
+matmul
+x
+
+transpose_32
+y
+
+transpose_31'
+transpose_x
+
+scores_transpose_x_0'
+transpose_y
+
+scores_transpose_y_0*
+scores 
+
+
+
+€
+€*
+name
+
+
+"
+scoresQ
+const
+var_436
+*
+name
+
+
+"
+op_436*
+val
+
+
+
+
+ÿÿÿ
+select
+cond
+
+
+mask_3
+a
+	
+var_436
+b
+
+
+scores,
+input_97 
+
+
+
+€
+€*
+name
+
+"
+
+input_97}
+softmax
+x
+
+
+input_97
+axis	
+
+var_8,
+input_99 
+
+
+
+€
+€*
+name
+
+"
+
+input_99_
+const
+x_transpose_x_0
+*%
+name
+
+"
+x_transpose_x_0*
+val
+
+
+ _
+const
+x_transpose_y_0
+*%
+name
+
+"
+x_transpose_y_0*
+val
+
+
+ ˆ
+	transpose
+x
+	
+var_426
+perm
+
+
+v_perm_0/
+transpose_33
+
+
+
+€
+@*"
+name
+
+"
+transpose_33¹
+matmul
+x
+
+
+input_99
+y
+
+transpose_33"
+transpose_x
+
+x_transpose_x_0"
+transpose_y
+
+x_transpose_y_0$
+x
+
+
+
+€
+@*
+name
+
+"
+xo
+const
+var_442_perm_0
+
+
+*#
+name
+
+"
+op_442_perm_0*!
+val
+
+
+
+
+
+ j
+const
+var_444
+
+
+*
+name
+
+
+"
+op_444**
+val#
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ€ˆ
+	transpose
+
+x
+
+x
+perm
+
+var_442_perm_0/
+transpose_30
+
+
+€
+
+@*"
+name
+
+"
+transpose_30€
+reshape
+x
+
+transpose_30
+shape
+	
+var_444'
+	input_101
+
+
+€
+€*
+name
+
+"
+	input_101ü
+linear
+x
+
+	input_101K
+weightA
+?
+=model_distilbert_transformer_layer_5_attention_out_lin_weightG
+bias?
+=
+;model_distilbert_transformer_layer_5_attention_out_lin_bias'
+	linear_33
+
+
+€
+€*
+name
+
+"
+	linear_33s
+add
+x
+
+	linear_33
+y	
+
+query'
+	input_103
+
+
+€
+€*
+name
+
+"
+	input_103z
+const 
+input_105_axes_0
+
+
+*&
+name
+
+"
+input_105_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ«
+
+layer_norm
+x
+
+	input_103
+axes
+
+input_105_axes_0F
+gamma=
+;
+9model_distilbert_transformer_layer_5_sa_layer_norm_weightC
+beta;
+9
+7model_distilbert_transformer_layer_5_sa_layer_norm_bias
+epsilon	
+
+var_6'
+	input_105
+
+
+€
+€*
+name
+
+"
+	input_105ê
+linear
+x
+
+	input_105B
+weight8
+6
+4model_distilbert_transformer_layer_5_ffn_lin1_weight>
+bias6
+4
+2model_distilbert_transformer_layer_5_ffn_lin1_bias'
+	linear_34
+
+
+€
+€*
+name
+
+"
+	linear_34e
+const
+input_109_mode_0
+*&
+name
+
+"
+input_109_mode_0*
+val
+
+	"
+EXACT‚
+gelu
+x
+
+	linear_34
+mode
+
+input_109_mode_0'
+	input_109
+
+
+€
+€*
+name
+
+"
+	input_109ê
+linear
+x
+
+	input_109B
+weight8
+6
+4model_distilbert_transformer_layer_5_ffn_lin2_weight>
+bias6
+4
+2model_distilbert_transformer_layer_5_ffn_lin2_bias'
+	linear_35
+
+
+€
+€*
+name
+
+"
+	linear_35w
+add
+x
+
+	linear_35
+y
+
+	input_105'
+	input_113
+
+
+€
+€*
+name
+
+"
+	input_113z
+const 
+input_115_axes_0
+
+
+*&
+name
+
+"
+input_115_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿ³
+
+layer_norm
+x
+
+	input_113
+axes
+
+input_115_axes_0J
+gammaA
+?
+=model_distilbert_transformer_layer_5_output_layer_norm_weightG
+beta?
+=
+;model_distilbert_transformer_layer_5_output_layer_norm_bias
+epsilon	
+
+var_6'
+	input_115
+
+
+€
+€*
+name
+
+"
+	input_115¯
+linear
+x
+
+	input_115%
+weight
+
+model_qa_outputs_weight!
+bias
+
+model_qa_outputs_bias&
+	linear_36
+
+
+€
+*
+name
+
+"
+	linear_36^
+const
+tile_0
+
+
+*
+name
+
+
+"
+tile_0*
+val
+
+
+
+
+e
+const
+var_473_axis_0
+*#
+name
+
+"
+op_473_axis_0*
+val
+
+
+
+ÿÿÿÿÿÿÿÿÿÀ
+split
+x
+
+	linear_36
+split_sizes
+
+
+tile_0
+axis
+
+var_473_axis_0&
+	var_473_0
+
+
+€
+&
+	var_473_1
+
+
+€
+*
+name
+
+
+"
+op_473u
+const
+var_476_axes_0
+
+
+*#
+name
+
+"
+op_476_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿw
+squeeze
+x
+
+	var_473_0
+axes
+
+var_476_axes_0
+var_476
+
+
+€*
+name
+
+
+"
+op_476u
+const
+var_478_axes_0
+
+
+*#
+name
+
+"
+op_478_axes_0*'
+val 
+
+
+
+
+
+ÿÿÿÿÿÿÿÿÿw
+squeeze
+x
+
+	var_473_1
+axes
+
+var_478_axes_0
+var_478
+
+
+€*
+name
+
+
+"
+op_478W
+const
+var_483
+*
+name
+
+
+"
+op_483*
+val
+
+
+
+ÿÿÿÿÿÿÿÿÿs
+softmax
+x
+	
+var_476
+axis
+	
+var_483#
+start_scores
+
+
+€*
+name
+
+
+"
+op_485W
+const
+var_486
+*
+name
+
+
+"
+op_486*
+val
+
+
+
+ÿÿÿÿÿÿÿÿÿq
+softmax
+x
+	
+var_478
+axis
+	
+var_486!
+
+end_scores
+
+
+€*
+name
+
+
+"
+op_488"œ
+	buildInfo"
+
+
+|"z
+6
+!
+
+"
+coremltools-version
+	
+"
+7.0
+@
+)
+!
+"
+coremltools-component-torch
+
+	"
+2.0.1
